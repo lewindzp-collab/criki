@@ -2,7 +2,7 @@
 
 A small, free, ad-free page that pulls together publicly available football and cricket streams and lines them up against today's fixtures. Criki doesn't host, encode, or own any video — it's a directory that points at streams already published elsewhere and does its best to match them to the right match.
 
-**[Live demo →](https://your-deployment-url-here)**
+**[Live demo →]([https://your-deployment-url-here](https://criki.vercel.app/))**
 
 ---
 
