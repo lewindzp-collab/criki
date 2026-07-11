@@ -7,7 +7,7 @@ A small, free, ad-free page that pulls together publicly available football and 
 ---
 
 ## Features
-
+ 
 - **Live fixtures** — football (Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Champions League, Europa League, World Cup, Copa América) and cricket, pulled from free public APIs
 - **Match → channel matching** — a best-effort heuristic pairs each fixture with a likely IPTV channel using channel name, country, and league keywords (not a licensed broadcast schedule — see [Data Sources](#data-sources--honest-disclaimer))
 - **Live channel directory** — search and filter by sport, country, and live/offline status, with background health-checking of stream links
