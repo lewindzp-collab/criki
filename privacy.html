@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Criki</title>
+<meta name="description" content="What Criki stores, what it doesn't, and where third-party data comes from.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Criki">
+<meta property="og:title" content="Privacy Policy — Criki">
+<meta property="og:description" content="What Criki stores, what it doesn't, and where third-party data comes from.">
+<meta property="og:image" content="https://your-deployment-url-here/favicon.png">
+<meta property="og:url" content="https://your-deployment-url-here/privacy.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Privacy Policy — Criki">
+<meta name="twitter:description" content="What Criki stores, what it doesn't, and where third-party data comes from.">
+<meta name="twitter:image" content="https://your-deployment-url-here/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html" style="text-decoration:none;">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <h1 class="display">CRI<span>KI</span></h1>
+      <span class="brand-sub">Live Sports Feed</span>
+    </a>
+  </div>
+</header>
+
+<nav class="info-nav">
+  <div class="info-nav-inner">
+    <a href="index.html">← Back to Criki</a>
+    <a href="about.html">About</a>
+    <a href="terms.html">Terms of Use</a>
+    <a href="privacy.html" class="active">Privacy Policy</a>
+  </div>
+</nav>
+
+<main class="page-content">
+  <div class="page-kicker">Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="page-updated">Last updated: July 2026</p>
+
+  <section>
+    <div class="callout">Short version: Criki has no server, no account system, and no analytics. Nothing you do on this site is sent anywhere or seen by anyone. The only "storage" involved is your own browser holding onto your favorites and current tab, and it never leaves your device.</div>
+  </section>
+
+  <section>
+    <h2>1. No accounts, no backend</h2>
+    <p>Criki doesn't have a login, a database, or a server that processes your data. It's a static site: your browser loads the page, then fetches channel and fixture data directly from third-party sources (see below). There is nothing on Criki's side collecting or storing information about you.</p>
+  </section>
+
+  <section>
+    <h2>2. What's stored in your browser</h2>
+    <p>Two small, local-only mechanisms are used, both readable only by this site in your own browser:</p>
+    <ul>
+      <li><strong>localStorage</strong> — your favorited channels, so they're still there next time you visit this browser.</li>
+      <li><strong>sessionStorage</strong> — which tab you were on and your scroll position, so navigating to a channel and back doesn't reset the page. Cleared automatically when you close the tab.</li>
+    </ul>
+    <p>Neither is transmitted to Criki or anyone else — it's local browser storage, not a cookie sent with requests. Clearing your browser's site data for Criki removes all of it.</p>
+  </section>
+
+  <section>
+    <h2>3. Third-party data sources</h2>
+    <p>Criki's content comes from external, independent sources, fetched directly by your browser:</p>
+    <ul>
+      <li><a href="https://github.com/iptv-org/iptv" target="_blank" rel="noopener">iptv-org/iptv</a> and its companion API — channel listings, stream links, and country data.</li>
+      <li><a href="https://www.thesportsdb.com/" target="_blank" rel="noopener">TheSportsDB</a> — match fixtures, team names, and logos.</li>
+      <li>Google Fonts (<code>fonts.googleapis.com</code>) and cdnjs (<code>cdnjs.cloudflare.com</code>) — for typefaces and the video-playback library (hls.js).</li>
+    </ul>
+    <p>Each of these is a separate service with its own infrastructure, and your browser connects to them directly (their standard request logs, e.g. IP address and request time, are outside Criki's control — see each provider's own policy for details).</p>
+  </section>
+
+  <section>
+    <h2>4. The streams themselves</h2>
+    <p>When you play a channel, your browser connects directly to that stream's own third-party host to fetch the video. Criki doesn't proxy, intercept, or log that connection — but the stream's host may have its own logging or tracking, entirely outside Criki's knowledge or control. Treat third-party streams the same way you would any other external site you click through to.</p>
+  </section>
+
+  <section>
+    <h2>5. No analytics, no ads, no tracking scripts</h2>
+    <p>Criki doesn't run any analytics platform, ad network, or tracking pixel. There's no mechanism here for building a profile of who's visiting or what they're watching.</p>
+  </section>
+
+  <section>
+    <h2>6. Changes to this policy</h2>
+    <p>If what's stored or fetched ever changes, this page will be updated and the "Last updated" date above will reflect it.</p>
+  </section>
+
+  <section>
+    <h2>7. Contact</h2>
+    <p>Questions about this policy can be raised via <a href="https://github.com/saikotportal" target="_blank" rel="noopener">GitHub</a> or through <a href="https://saikot.dev" target="_blank" rel="noopener">saikot.dev</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col footer-brand-col">
+      <a class="footer-logo display" href="index.html">CRI<span>KI</span></a>
+      <p class="footer-tagline">A free, ad-free directory of publicly available football &amp; cricket streams, matched up against today's fixtures. No hosting, no accounts, no tracking.</p>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-heading mono">QUICK LINKS</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-heading mono">LEGAL</h4>
+      <ul class="footer-links">
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-heading mono">CONNECT</h4>
+      <div class="footer-connect">
+        <a class="footer-icon-btn" href="https://github.com/saikotportal" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+        <button type="button" class="footer-icon-btn" id="devCreditTrigger" aria-label="Built by saikot.dev">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-divider" aria-hidden="true"></div>
+
+  <div class="footer-bottom mono">
+    <span>&copy; <span id="footerYear"></span> Criki. All rights reserved.</span>
+    <span class="footer-status"><span class="live-dot-sm" aria-hidden="true"></span>Data feeds live</span>
+  </div>
+
+  <p class="footer-disclaimer">Channel data from <a href="https://github.com/iptv-org/iptv" target="_blank" rel="noopener">iptv-org/iptv</a> · fixtures from <a href="https://www.thesportsdb.com/" target="_blank" rel="noopener">TheSportsDB</a>. Streams are third-party public links; match→channel pairing is best-effort. For personal use only.</p>
+</footer>
+
+<div class="dev-overlay" id="devOverlay" hidden>
+  <div class="dev-card-shell" id="devCardShell">
+    <div class="dev-card" id="devCard" role="dialog" aria-modal="true" aria-labelledby="devCardName">
+      <div class="dev-scanline" aria-hidden="true"></div>
+
+      <div class="dev-termbar">
+        <span class="dev-dot red" aria-hidden="true"></span>
+        <span class="dev-dot amber" aria-hidden="true"></span>
+        <span class="dev-dot green" aria-hidden="true"></span>
+        <span class="dev-termlabel mono">DEV_PROFILE.SYS</span>
+        <button type="button" class="dev-close" id="devCloseBtn" aria-label="Close">✕</button>
+      </div>
+
+      <div class="dev-body">
+        <div class="dev-avatar" aria-hidden="true">SA</div>
+        <h3 id="devCardName" class="dev-name display glitch" data-text="SAIKOT ISLAM ABIR">SAIKOT ISLAM ABIR</h3>
+        <p class="dev-status mono"><span class="dev-status-dot" aria-hidden="true"></span>STATUS: ONLINE</p>
+        <p class="dev-tagline">Web developer — builds Criki and other dark-themed, cyberpunk-flavored projects.</p>
+        <div class="dev-btn-row">
+          <a class="dev-btn primary" href="https://saikot.dev" target="_blank" rel="noopener">
+            <span>Visit saikot.dev</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+          </a>
+          <a class="dev-btn secondary" href="https://github.com/saikotportal" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.72 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <span class="dev-corner tl" aria-hidden="true"></span>
+      <span class="dev-corner tr" aria-hidden="true"></span>
+      <span class="dev-corner bl" aria-hidden="true"></span>
+      <span class="dev-corner br" aria-hidden="true"></span>
+    </div>
+  </div>
+</div>
+
+<button id="backToTopBtn" class="back-to-top" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 19V5"/>
+    <path d="M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+<script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+<script src="js/backtotop.js"></script>
+<script src="js/devcredit.js"></script>
+</body>
+</html>

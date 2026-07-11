@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Criki — Player</title>
+<meta name="description" content="Watch live football & cricket streams on Criki.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Criki">
+<meta property="og:title" content="Criki — Player">
+<meta property="og:description" content="Watch live football & cricket streams on Criki.">
+<meta property="og:image" content="https://your-deployment-url-here/favicon.png">
+<meta property="og:url" content="https://your-deployment-url-here/player.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Criki — Player">
+<meta name="twitter:description" content="Watch live football & cricket streams on Criki.">
+<meta name="twitter:image" content="https://your-deployment-url-here/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js"></script>
+</head>
+<body>
+
+<div class="modal-overlay open static-page" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <a class="modal-back" href="index.html" aria-label="Back to channels">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        <span>Back</span>
+      </a>
+      <div class="modal-header-info">
+        <div class="modal-logo" id="modalLogo"></div>
+        <div class="modal-header-text">
+          <div class="modal-title-row">
+            <span class="live-dot" aria-hidden="true"></span>
+            <h3 id="modalTitle">Loading channel…</h3>
+          </div>
+          <div class="modal-tags" id="modalTags"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-wrap" id="videoWrap">
+      <video id="videoEl" playsinline></video>
+
+      <div class="video-status" id="videoStatus">
+        <div class="signal-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <span class="display">TUNING IN…</span>
+      </div>
+
+      <div class="buffer-indicator" id="bufferIndicator" style="display:none;">
+        <div class="signal-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <span id="bufferIndicatorText">BUFFERING…</span>
+      </div>
+
+      <div class="player-controls" id="playerControls">
+        <div class="pc-seek-row">
+          <div class="pc-seek-track" id="pcSeekTrack">
+            <div class="pc-seek-fill" id="pcSeekFill"></div>
+            <div class="pc-seek-thumb" id="pcSeekThumb"></div>
+          </div>
+        </div>
+        <div class="pc-buttons-row">
+        <button class="pc-btn" id="pcPlay" aria-label="Play/Pause" data-icon="pause"></button>
+        <div class="pc-volume">
+          <button class="pc-btn" id="pcMute" aria-label="Mute/Unmute" data-icon="volume-high"></button>
+          <input type="range" class="pc-volume-slider" id="pcVolumeSlider" min="0" max="1" step="0.05" value="1" aria-label="Volume">
+        </div>
+        <span class="pc-live-offset mono" id="pcLiveOffset">LIVE</span>
+        <button class="pc-live mono" id="pcLive" type="button" title="Jump to live edge">
+          <span class="pc-live-dot" aria-hidden="true"></span>LIVE
+        </button>
+        <div class="pc-spacer"></div>
+        <button class="pc-btn" id="pcPip" aria-label="Picture-in-picture" data-icon="pip"></button>
+        <button class="pc-btn" id="pcFullscreen" aria-label="Fullscreen" data-icon="fullscreen"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="tab-btn" id="modalFavBtn">☆ Add to favorites</button>
+    </div>
+
+    <div class="modal-switcher-wrap" id="modalSwitcherWrap" style="display:none;">
+      <div class="modal-switcher-label mono">MORE LIKE THIS</div>
+      <div class="modal-switcher" id="modalSwitcher"></div>
+    </div>
+  </div>
+</div>
+
+<button id="backToTopBtn" class="back-to-top" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 19V5"/>
+    <path d="M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/favorites.js"></script>
+<script src="js/player.js"></script>
+<script src="js/backtotop.js"></script>
+</body>
+</html>
