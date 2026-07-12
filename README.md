@@ -18,8 +18,7 @@ A small, free, ad-free page that pulls together publicly available football and 
 - **Custom error pages** — themed 404 / 500 / 503 pages
 
 ## Tech Stack
-
-Plain HTML, CSS, and JavaScript — no framework, no build step, no backend.
+.
 
 | Purpose | Source |
 |---|---|
