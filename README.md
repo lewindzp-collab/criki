@@ -5,7 +5,7 @@ A small, free, ad-free page that pulls together publicly available football and 
 **[Live demo →](https://criki.vercel.app/)**
 
 ---
-
+ 
 ## Features
  
 - **Live fixtures** — football (Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Champions League, Europa League, World Cup, Copa América) and cricket, pulled from free public APIs
